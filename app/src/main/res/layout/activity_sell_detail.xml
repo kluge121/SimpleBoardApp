@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hanbat.isl.baeminsu.mobileproject.Activity.SellDetailActivity">
+
+    <TextView
+        android:id="@+id/sell_detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="글제목"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sell_detail_name_price_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/sell_detail_phone"
+        android:layout_below="@+id/sell_detail_title"
+        android:layout_marginTop="10dp"
+        android:text="2015-03-23"
+        android:textColor="@color/gray"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/sell_detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sell_detail_name_price_date"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:text="배민수"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/sell_detail_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sell_detail_name"
+        android:layout_marginRight="10dp"
+        android:text="010-5139-1656"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/sell_detail_image"
+        android:layout_width="260dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/sell_detail_price"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/image_round"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/sell_detail_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/sell_detail_phone"
+        android:layout_below="@+id/sell_detail_phone"
+        android:layout_marginTop="5dp"
+        android:text="20000원"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/sell_detail_name_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sell_detail_image"
+        android:layout_marginTop="30dp"
+        android:gravity="top"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="글 내용들입니다. "
+        android:textSize="20sp" />
+
+</RelativeLayout>
